@@ -1,0 +1,26 @@
+\documentclass[a4paper,10pt]{article}
+
+% PACKAGES
+\usepackage[brazil]{babel}				% portuguese
+\usepackage{color}						% color comments
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb,bm}
+\usepackage[parfill]{parskip} 			% this makes lines between paragraphs and no indentation
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{cite}
+
+%opening
+\title{Test an article with Bibtex references}
+\author{Gabriel Apolinário}
+
+\begin{document}
+
+\maketitle
+
+Esse é o texto com uma citação a \cite{glauber1963time}. Será que funciona?
+
+\bibliographystyle{is-unsrt}
+\bibliography{bibl}
+
+\end{document}
